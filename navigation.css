@@ -1,0 +1,249 @@
+body {
+    background-color: #fff8e7; /* Soft yellow background */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("wallapaper.jpg");
+    background-size: cover;
+    animation: baseline 0.9s forwards cubic-bezier(.4,0,.39,1.04);
+    animation: fadeIn 2s;
+}
+
+@font-face {
+    font-family: "font valeri";
+    src: url(font\ valeri\ -\ Copy.ttf);
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0;}
+    100% { opacity: 1;} 
+}
+
+@keyframes baseline {
+    0% { transform: translateY(140%); }
+    100% { transform: translateY(0); }
+}
+
+h1 {
+    font-family: "font valeri";
+    animation: baseline 0.9s forwards cubic-bezier(.4,0,.39,1.04);
+    color: rgb(133, 75, 75);
+    text-align: center;
+    font-size: 25px;
+}
+
+h2 {
+    font-family: "font valeri";
+    animation: baseline 0.9s forwards cubic-bezier(.4,0,.39,1.04);
+    color: rgb(133, 75, 75);
+    text-align: left;
+    font-size: 25px;
+    line-height: 28px;
+}
+
+p {
+    font-family: "font valeri";
+    animation: baseline 0.9s forwards cubic-bezier(.4,0,.39,1.04);
+    color: rgb(133, 75, 75);
+    text-align: left;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+ul {
+    font-family: "font valeri";
+    animation: baseline 0.9s forwards cubic-bezier(.4,0,.39,1.04);
+    color: rgb(133, 75, 75);
+    text-align: left;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+h1, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    font-family: "font valeri";
+    animation: baseline 0.9s forwards cubic-bezier(.4,0,.39,1.04);
+    color: rgb(133, 75, 75);
+    text-align: left;
+    font-size: 20px;
+    line-height: 28px;
+}
+  
+.foto1, .foto2,.foto3, .foto4, .foto5, .foto6, .foto7, .foto8, .foto9, .foto10, .foto11, .foto12, .foto13, .foto14,.foto15, .foto16, .foto17{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    box-shadow: 20px 20px 10px #73242400;
+    border: 2px solid black;
+    border-radius: 30px;
+    justify-content: baseline;
+    animation: appear linear;
+
+    animation: baseline 0.9s forwards cubic-bezier(.4,0,.39,1.04); 
+    animation-timeline: view();
+    animation-range: entry 0% cover 40% 
+}
+
+.foto13{
+    border: none;
+}
+  
+  .header, .footer{
+    display: block;
+    width: 100%;
+    box-shadow: 20px 15px 10px #73242400;
+    justify-content: baseline;
+    align-items: center;
+    animation: appear linear;
+    animation: baseline 0.9s forwards cubic-bezier(.4,0,.39,1.04); 
+    height: auto;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40% 
+  }
+  
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #FFB6C1;
+    padding: 20px;
+    margin: 20px 100px;
+    background-color: #FFF0F5;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin-bottom: 18px;
+    animation: baseline 0.9s forwards cubic-bezier(.4,0,.39,1.04);
+}
+
+.content-contact,
+.content-services,
+.content-about,
+.content-ips {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #FFB6C1;
+    padding: 20px; 
+    background-color: #FFF0F5;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin: 0 auto 40px auto; 
+    animation: baseline 0.9s forwards cubic-bezier(.4,0,.39,1.04);
+    flex-direction: column;
+    gap: 2px;
+    text-align: justify;
+    width: 1000px;
+    max-width: 90%; 
+    height: auto; 
+}
+
+
+.content-section h2 {
+    margin-bottom: 10px; 
+}
+
+
+.navbar {
+    position: sticky;
+    top: 0;
+    margin-top: -2px;
+    z-index: 1;
+    margin-bottom: 10px;
+    background-color: #f8cadc; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    font-family: "font valeri";
+    border: 3px solid #FFB6C1; 
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: rgb(133, 75, 75);
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 20px;
+    animation: baseline 0.9s forwards cubic-bezier(.4,0,.39,1.04);
+}
+
+.navbar a:hover {
+    background-color: #ffd79d; /* Pastel yellow on hover */
+    color: rgb(174, 60, 60);
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropbtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: rgb(133, 75, 75);
+    padding: 14px 20px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    border-radius: 20px;
+    animation: baseline 0.9s forwards cubic-bezier(.4,0,.39,1.04);
+}
+
+.navbar a, .dropdown .dropbtn {
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f8cadc; /* Match the navbar */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.dropdown-content a {
+    color: rgb(133, 75, 75);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border-radius: 10px;
+}
+
+.dropdown-content a:hover {
+    background-color: #ffd79d; /* Hover color for dropdown */
+    color: rgb(174, 60, 60);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #ffd79d; /* Change color when hovered */
+}
+
+.arrow-down {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    margin-left: 10px;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
